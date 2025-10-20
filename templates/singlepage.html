@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Page - 20231201068+项丽妍</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background: white;
+            color: black;
+        }
+        
+        .nav-buttons {
+            padding: 10px 0;
+        }
+        
+        .nav-button {
+            padding: 5px 10px;
+            border: 1px solid #ccc;
+            background: #f0f0f0;
+            cursor: pointer;
+            margin-right: 5px;
+        }
+        
+        .nav-button.active {
+            background: white;
+            border-bottom: 1px solid white;
+            position: relative;
+            bottom: -1px;
+        }
+        
+        .page {
+            display: none;
+            padding: 20px;
+        }
+        
+        .page.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-buttons">
+        <button class="nav-button active" data-page="page1">Page 1</button>
+        <button class="nav-button" data-page="page2">Page 2</button>
+        <button class="nav-button" data-page="page3">Page 3</button>
+    </div>
+    
+    <div id="page1" class="page active">
+        <h1>This is page 1</h1>
+    </div>
+    
+    <div id="page2" class="page">
+        <h1>This is page 2</h1>
+    </div>
+    
+    <div id="page3" class="page">
+        <h1>This is page 3</h1>
+    </div>
+    
+    <script src="/static/singlepage.js"></script>
+</body>
+</html>

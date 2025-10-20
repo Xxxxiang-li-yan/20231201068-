@@ -24,3 +24,9 @@ def hello_name(request, name):
         'current_time': datetime.now().strftime('%Y-%m-%d %H:%M:%S')
     }
     return render(request, 'hello.html', context)
+
+def singlepage_app(request):
+    """
+    Single Page Application view.
+    """
+    return render(request, 'singlepage.html')

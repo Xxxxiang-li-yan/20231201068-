@@ -12,4 +12,5 @@ urlpatterns = [
     path('', views.hello_world, name='hello_world'),
     path('hello/', views.hello_world, name='hello'),
     path('hello/<str:name>/', views.hello_name, name='hello_name'),
+    path('singlepage/', views.singlepage_app, name='singlepage_app'),
 ]

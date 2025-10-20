@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}Hello World - My Django Site{% endblock %}
+
+{% block content %}
+<h1>Hello, {{ name|default:"World" }}!</h1>
+<p>Welcome to my Django application!</p>
+<p>Current time: {{ current_time }}</p>
+
+<div style="margin-top: 20px;">
+    <h3>Try these links:</h3>
+    <ul>
+        <li><a href="/hello/Django/">Hello Django</a></li>
+        <li><a href="/hello/Python/">Hello Python</a></li>
+        <li><a href="/hello/Developer/">Hello Developer</a></li>
+    </ul>
+</div>
+{% endblock %}

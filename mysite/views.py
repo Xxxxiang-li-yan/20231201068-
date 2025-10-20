@@ -10,7 +10,7 @@ def hello_world(request):
     Simple Hello World view.
     """
     context = {
-        'name': 'World',
+        'name': '20231201068+项丽妍',
         'current_time': datetime.now().strftime('%Y-%m-%d %H:%M:%S')
     }
     return render(request, 'hello.html', context)

@@ -3,7 +3,7 @@
 {% block title %}Hello World - My Django Site{% endblock %}
 
 {% block content %}
-<h1>Hello, {{ name|default:"World" }}!</h1>
+<h1>{{ name|default:"World" }}!</h1>
 <p>Welcome to my Django application!</p>
 <p>Current time: {{ current_time }}</p>
 
